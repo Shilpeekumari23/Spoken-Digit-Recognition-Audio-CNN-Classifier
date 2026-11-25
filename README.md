@@ -11,7 +11,7 @@
 
 [Explore notebook](digit-recognition-2.ipynb) · [View presentation](digit_recognition_solution.pptx) · [Quick start](#quick-start)
 
-[Overview](#project-overview) · [Results](#model-performance) · [Workflow](#methodology) · [Architecture](#cnn-architecture)
+[Overview](#project-overview) · [Results](#results--achievements) · [Workflow](#methodology) · [Architecture](#cnn-architecture)
 
 </div>
 
@@ -30,7 +30,19 @@ This project classifies spoken digits (0–9) from WAV audio using a four-layer 
 | Overfitting | SpecAugment, batch normalization and dropout |
 | Model selection | Stratified validation and best macro-F1 checkpoint |
 
-## Model performance
+## Results & Achievements
+
+| Evaluation metric | Result |
+| :--- | ---: |
+| Best validation Macro-F1 | **98.06% (0.9806)** |
+| Best checkpoint | Epoch 11 of 15 |
+| Validation loss at best checkpoint | 0.0609 |
+| Test audio recordings processed | 16,200 |
+| Output classes | 10 |
+
+The CNN achieved a validation Macro-F1 of **0.9806** and generated predictions for all 16,200 test audio files. Independent test-set performance is not reported in the notebook.
+
+### Model performance
 
 <img src="assets/validation-f1.svg" alt="Validation macro-F1 across 15 epochs, reaching 98.06% at epoch 11" width="100%">
 
